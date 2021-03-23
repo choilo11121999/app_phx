@@ -39,6 +39,7 @@ defmodule AppPhxWeb do
 
       # Include shared imports and aliases for views
       unquote(view_helpers())
+      import AppPhxWeb.Helpers.Auth, only: [signed_in?: 1]
     end
   end
 
